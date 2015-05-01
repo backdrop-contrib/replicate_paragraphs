@@ -53,7 +53,10 @@ function replicate_paragraphs_clone_items(&$entity, $entity_type, $field_name, $
 
   $entity_wrapper = entity_metadata_wrapper($entity_type, $entity);
   $old_items = $entity_wrapper->{$field_name}->value();
-  if (!is_array($old_items)) {
+  if (is_null($old_items)) {
+    $old_items = array();
+  }
+  elseif (!is_array($old_items)) {
     $old_items = array($old_items);
   }
 
