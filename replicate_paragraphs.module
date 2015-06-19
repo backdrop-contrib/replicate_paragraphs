@@ -65,9 +65,11 @@ function replicate_paragraphs_clone_items(&$entity, $entity_type, $field_name, $
   unset($entity->{$field_name}[$language]);
 
   foreach ($old_items as $old_item) {
-    $new_item = replicate_clone_entity('paragraphs_item', $old_item);
-    $new_item->setHostEntity($entity_type, $entity);
-    // Don't save the new paragraphs,
-    // it will be saved along with the host entity.
+    if (!empty($old_item)) {
+      $new_item = replicate_clone_entity('paragraphs_item', $old_item);
+      $new_item->setHostEntity($entity_type, $entity);
+      // Don't save the new paragraphs,
+      // it will be saved along with the host entity.
+    }
   }
 }
