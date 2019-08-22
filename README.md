@@ -9,8 +9,8 @@ paragraphs_item entities and fields.
 
 ## Dependencies
 
--Replicate
--Paragraphs
+- Replicate
+- Paragraphs
 
 ## Configuration and Usage
 
@@ -26,11 +26,11 @@ duplication of paragraphs.
 The replication is recursive, ie. will work on paragraphs containing
 paragraphs and so on.
 
-More details may be found (or added) in the [Wiki](https://github.com/backdrop-contrib/replicate_paragraphs/issues)
+More details may be found (or added) in the [Wiki](https://github.com/backdrop-contrib/replicate_paragraphs/issues).
 
 ## Issues
 
-Bugs and Feature requests should be reported in the [Issue Queue](https://github.com/backdrop-contrib/replicate_paragraphs/issues)
+Bugs and Feature requests should be reported in the [Issue Queue](https://github.com/backdrop-contrib/replicate_paragraphs/issues).
 
 ## Current Maintainers
 
