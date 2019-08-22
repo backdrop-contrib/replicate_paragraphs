@@ -1,4 +1,5 @@
-core = "7.x"
+backdrop = 1.x
+type = module
 description = "Extends Replicate module to manage the replication of paragraph_item fields."
 name = "Replicate Paragraphs"
 package = "Entity"
